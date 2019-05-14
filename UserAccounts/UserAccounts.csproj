@@ -197,9 +197,10 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\Football\PlayersController.cs" />
+    <Compile Include="Controllers\Football\TeamsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
-    <Compile Include="Controllers\TeamsController.cs" />
     <Compile Include="Data\DummyData.cs" />
     <Compile Include="FootballContext.cs" />
     <Compile Include="Global.asax.cs">
@@ -209,7 +210,16 @@
     <Compile Include="Migrations\FootBall\201905070931310_InitialCreate.Designer.cs">
       <DependentUpon>201905070931310_InitialCreate.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\FootBall\201905130719349_AddedIsActive.cs" />
+    <Compile Include="Migrations\FootBall\201905130719349_AddedIsActive.Designer.cs">
+      <DependentUpon>201905130719349_AddedIsActive.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\FootBall\Configuration.cs" />
+    <Compile Include="Migrations\Identity\201905130954569_InitialIdentityCreate.cs" />
+    <Compile Include="Migrations\Identity\201905130954569_InitialIdentityCreate.Designer.cs">
+      <DependentUpon>201905130954569_InitialIdentityCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Identity\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
@@ -278,6 +288,15 @@
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Teams\Index.cshtml" />
+    <Content Include="Views\Teams\Create.cshtml" />
+    <Content Include="Views\Teams\Delete.cshtml" />
+    <Content Include="Views\Teams\Details.cshtml" />
+    <Content Include="Views\Teams\Edit.cshtml" />
+    <Content Include="Views\Players\Create.cshtml" />
+    <Content Include="Views\Players\Delete.cshtml" />
+    <Content Include="Views\Players\Details.cshtml" />
+    <Content Include="Views\Players\Edit.cshtml" />
+    <Content Include="Views\Players\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -298,6 +317,12 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\FootBall\201905070931310_InitialCreate.resx">
       <DependentUpon>201905070931310_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\FootBall\201905130719349_AddedIsActive.resx">
+      <DependentUpon>201905130719349_AddedIsActive.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\Identity\201905130954569_InitialIdentityCreate.resx">
+      <DependentUpon>201905130954569_InitialIdentityCreate.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
